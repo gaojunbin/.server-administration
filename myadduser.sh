@@ -40,11 +40,11 @@ myadduser(){
 
     # change own
     sudo chown -R "${user_name}:${user_name}" "${user_home}/.ssh"
+    sudo chown -R "$USER:$USER" "${path_to_save_keygen}"
 
     # change mod
     sudo chmod 700 "${user_home}/.ssh"
     sudo chmod 600 "${user_home}/.ssh/authorized_keys"
-    sudo chown -R "$USER:$USER" "${path_to_save_keygen}"
 
     echo "Congratulations, it worked. Please download the key and log in."
     echo "key file path: ${path_to_save_keygen}/${user_name}_${server_name}"

@@ -1,5 +1,5 @@
 ohmyserver(){
-    echo -e 'This is a toolkit for server managementadministration.'
+    echo -e 'This is a toolkit for server administration.'
     echo -e 'NOTE: You must be the root user to use this tool!'
     echo -e 'NOTE: Please make sure you are an administrator, proceed with caution!'
     echo -e '[*] myadduser    - Add new linux user.'
