@@ -6,5 +6,6 @@ ohmyserver(){
     echo -e '[*] myquota      - Limit user storage space.'
 }
 
-source myadduser.sh
-source myquota.sh
+server_administration_root="~/.server-administration"
+source "${server_administration_root}/myadduser.sh"
+source "${server_administration_root}/myquota.sh"
