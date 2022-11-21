@@ -12,6 +12,7 @@ myquota(){
     read func
     if [ "${func}" = "1" ];then
         sudo apt install quota
+        echo "For Amazon AWS, you should additional install: sudo apt-get -y install linux-modules-extra-aws"
     elif [ "${func}" = "2" ];then
         echo "1. [sudo vim /etc/fstab]"
         echo "2. add [usrquota] and/or [grpquota] options in the options field ([4th]) of the /etc/fstab file"

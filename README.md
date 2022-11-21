@@ -17,5 +17,5 @@ If you need this tool to always be available, add `source ~/.server-administrati
 
 - [x] Create new user and generate keygen.
 - [x] Create and generate keygen for old user.
-- [ ] Setting a specific user's disk limit.
+- [x] Setting a specific user's disk limit.
 - [ ] Setting all the users' disk limit with a same configuration.
