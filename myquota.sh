@@ -15,7 +15,7 @@ myquota(){
         echo "For Amazon AWS, you should additional install: sudo apt-get -y install linux-modules-extra-aws"
     elif [ "${func}" = "2" ];then
         echo "1. [sudo vim /etc/fstab]"
-        echo "2. add [usrquota] and/or [grpquota] options in the options field ([4th]) of the /etc/fstab file"
+        echo "2. add [usrquota] and/or [grpquota] options in the options field ([4th column]) of the /etc/fstab file"
         echo "3. [sudo reboot]"
     elif [ "${func}" = "3" ];then
         echo -e "turn on quota on which filesystem (default: /): \c"
@@ -50,7 +50,7 @@ myquota(){
             fi
         fi
     elif [ "${func}" = "6" ];then
-        sudo repquota -aug
+        sudo repquota -aguv
     else
         echo "Invalid input!"
     fi
